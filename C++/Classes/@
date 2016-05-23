@@ -1,0 +1,56 @@
+
+
+	#include<iostream>
+	#include<cstring>
+	using namespace std;
+
+
+	class String
+	{
+		private:
+			char str[100];
+			int length;
+
+		public:
+
+			void setString(char *s)
+			{
+				cin << *s;
+				strcpy(str,s);
+			}
+			void printString()
+			{
+				cout << str << endl;
+			}
+	
+	//		void strrev();
+	//		int  strlen();
+	//		void strupr();
+	//		void strlwr();
+
+	};
+	
+	
+
+
+
+
+	
+	int main()
+	{
+	
+	String s1;
+	
+		setString(s1.str);
+
+		printString();
+
+/*		strrev();
+		strlen();
+		strupr();
+		strlwr();
+	
+*/
+
+	return 0;
+	}

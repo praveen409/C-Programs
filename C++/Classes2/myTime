@@ -1,0 +1,32 @@
+
+
+
+
+
+	#include<iostream>
+
+	using namespace std;
+
+
+	namespace myTime
+	{
+		class Time
+		{	
+			int hour, minute, second;
+
+			public:
+				
+			void reset(){hour=minute=second=0;}
+
+
+			void setTime(int h, int m, int s)
+			{
+				hour = h; minute = m; second = s;
+			}
+
+			void printTime()
+			{
+				cout<<hour<<":"<<minute<<":"<<second<<"\n";
+			}
+		};
+	}

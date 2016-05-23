@@ -1,0 +1,29 @@
+
+
+
+
+
+
+	#include<iostream>
+	using namespace std;
+
+
+
+	namespace ABC
+	{
+		int x = 6543;
+
+		void display();
+	}
+
+
+
+
+
+
+	void ABC :: display()
+	{
+		cout<<"Display in ABC Namespace....\n";
+
+		cout<<"X value : "<<x<<"\n";
+	}

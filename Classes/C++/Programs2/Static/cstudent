@@ -1,0 +1,77 @@
+
+	#include<iostream>
+	#include<cstring>
+	using namespace std;
+
+	namespace College
+	{
+	  class Student
+	  {
+		private:
+			static int number;
+			int rno;
+			char name[20];
+			char gender;
+			static char college[20];
+			char city[20];
+
+		public:
+
+
+
+	   Student(char *name, char gender, char *city)
+	   {
+		number++;
+		
+		this -> rno = number;
+
+		strcpy(this -> name, name);
+
+		this -> gender = gender;
+
+		strcpy(this -> city, city);
+	   }
+
+	   void set(char *name, char gender, char *city)
+	   {
+
+		this -> rno = number;
+
+		strcpy(this -> name, name);
+
+		this -> gender = gender;
+
+		strcpy(this -> city, city);
+	   }
+
+
+	   void print()
+	   {
+		cout<<"Register Number : "<<rno<<"\n";
+		cout<<"Name            : "<<name<<"\n";
+		cout<<"Gender  	       : "<<gender<<"\n";
+		cout<<"College         : "<<college<<"\n";
+		cout<<"City            : "<<city<<"\n";
+	   }
+
+
+	   static void showCounts()
+	   {
+			cout<<"number of studens : "<<number-100<<"\n";
+	   }
+
+	  };
+
+
+
+		
+		char Student::college[20] = "ISM University";
+
+		int Student::number = 100;
+
+
+
+	}
+
+
+

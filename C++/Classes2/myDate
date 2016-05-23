@@ -1,0 +1,49 @@
+
+
+	#include<iostream>
+	#include<cstring>
+
+	using namespace std;
+
+	namespace myDate
+	{
+
+		class Date
+		{
+
+				int Day;
+				char month[100];
+				int year;
+
+			public:
+				void setDate()
+				{
+					cout << "Enter the Date :" << endl;
+					cin >> Day;
+					cout << "Enter the Month :"<< endl;
+					cin >> month;
+					cout << "Enter the Year :"<< endl;
+					cin >> year;
+
+				//	Day = 01;
+				//	strcpy(month,"Janvary");
+				//	year = 1970;
+				}
+				
+				void setDate(int d,char m[],int y)
+				{
+					Day = d; 
+					strcpy(month,m); 
+					year = y;
+				}
+
+				void putDate()
+				{
+					cout<<Day<<" "<<month<<" "<<year<<endl;
+				}
+
+
+		};
+
+
+	}

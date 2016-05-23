@@ -1,0 +1,34 @@
+
+
+
+
+
+	#include<iostream>
+	using namespace std;
+
+
+	namespace ProjectA
+	{
+		void fun()
+		{
+			cout<<"Function from Project A...\n";
+		}
+
+
+
+		namespace teamA
+		{
+			void fun()
+			{
+				cout<<"Function from team A of Project A.\n";
+			}
+		}
+
+		namespace teamB
+		{
+			void fun()
+			{
+				cout<<"Function from team B of Project A.\n";
+			}
+		}
+	}
